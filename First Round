@@ -1,0 +1,11 @@
+def rotate(N,M):
+n = len(N)
+result = “ ”
+for i in range(n):
+A = (i + M) % n
+result += S[A]
+return result
+S = input("Enter a string: ")
+M = 2
+left = rotate(S, M)
+print(left)
